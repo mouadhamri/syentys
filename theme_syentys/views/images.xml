@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Logo Snippet -->
+    <record id="syentys_logo" model="theme.ir.attachment">
+        <field name="key">website.syentys_logo</field>
+        <field name="name">website.syentys_logo</field>
+        <field name="url">/theme_syentys/static/src/img/pictures/syentys_logo.svg</field>
+    </record>
+
+    <!-- Scrum Snippet -->
+    <record id="syentys_scrum" model="theme.ir.attachment">
+        <field name="key">website.syentys_scrum</field>
+        <field name="name">website.syentys_scrum</field>
+        <field name="url">/theme_syentys/static/src/img/pictures/syentys_scrum.svg</field>
+    </record>
+
+    <!-- Team Snippet -->
+    <record id="syentys_company_team_image" model="theme.ir.attachment">
+        <field name="key">website.syentys_company_team_image</field>
+        <field name="name">website.syentys_company_team_image</field>
+        <field name="url">/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg</field>
+    </record>
+
+    <!-- Certificates -->
+    <record id="syentys_docker" model="theme.ir.attachment">
+        <field name="key">website.syentys_docker</field>
+        <field name="name">website.syentys_docker</field>
+        <field name="url">/theme_syentys/static/src/img/pictures/syentys_docker.png</field>
+    </record>
+    <record id="syentys_kubernetes" model="theme.ir.attachment">
+        <field name="key">website.syentys_kubernetes</field>
+        <field name="name">website.syentys_kubernetes</field>
+        <field name="url">/theme_syentys/static/src/img/pictures/syentys_kubernetes.png</field>
+    </record>
+    <record id="syentys_psm" model="theme.ir.attachment">
+        <field name="key">website.syentys_psm</field>
+        <field name="name">website.syentys_psm</field>
+        <field name="url">/theme_syentys/static/src/img/pictures/syentys_psm.png</field>
+    </record>
+    <record id="syentys_scrum" model="theme.ir.attachment">
+        <field name="key">website.syentys_scrum</field>
+        <field name="name">website.syentys_scrum</field>
+        <field name="url">/theme_syentys/static/src/img/pictures/syentys_scrum.svg</field>
+    </record>
+
+</odoo>

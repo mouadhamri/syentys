@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- project.project Inherited Form -->
+        <record id="project_project_sequence" model="ir.ui.view">
+            <field name="name">project.project.sequence</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']/field[@name='currency_id']" position="after">
+                    <button type="object" name="action_view_ticket" class="oe_stat_button" icon="fa-ticket"
+                            attrs="{'invisible': [('tickets_count', '=', 0)]}">
+                        <field name="tickets_count" widget="statinfo" string="Tickets"/>
+                    </button>
+                </xpath>
+                <xpath expr="//page[@name='settings']//field[@name='privacy_visibility']" position="after">
+                    <field name="task_sequence"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- project.task Inherited Form -->
+        <record id="view_task_form2_code" model="ir.ui.view">
+            <field name="name">project.task.form.code</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='parent_id']" position="after">
+                    <field name="code" attrs="{'invisible': [('parent_id','!=',False)]}"/>
+                </xpath>
+                <xpath expr="//field[@name='recurring_task']" position="after">
+                    <field name="invoice_id" attrs="{'invisible': [('parent_id','!=',False)]}"/>
+                    <field name="guaranteed_date"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- project.task.type Inherited Form -->
+        <record id="task_type_edit_inherited" model="ir.ui.view">
+            <field name="name">project.task.type.inherited</field>
+            <field name="model">project.task.type</field>
+            <field name="inherit_id" ref="project.task_type_edit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='project_ids']" position="after">
+                    <field name="update_guaranteed_date" widget="boolean_toggle"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

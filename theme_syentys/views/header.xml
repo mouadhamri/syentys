@@ -1,0 +1,35 @@
+<odoo>
+    <!-- Inherit placeholder_header_call_to_action template -->
+    <template id="custome_header" inherit_id="website.placeholder_header_call_to_action">
+        <xpath expr="." position="replace">
+            <div t-attf-class="oe_structure oe_structure_solo #{_div_classes}"
+                 lass="oe_structure oe_structure_solo ml-2">
+                <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text"
+                         style="background-image: none;">
+                    <div class="container">
+                        <a href="/contactus" class="_cta btn btn-fill-primary rounded-circle" data-original-title=""
+                           title="" style="">Contactez-nous
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Inherit layout template -->
+    <template id="custome_layout" inherit_id="website.layout">
+        <xpath expr="//header" position="attributes">
+            <attribute name="t-attf-class" add="o_header_fade_out" separator=" "/>
+        </xpath>
+        <xpath expr="//header" position="attributes">
+            <attribute name="t-attf-class" add="o_hoverable_dropdown" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- Inherit template_header_default template -->
+    <template id="custome_template_header_default" inherit_id="website.template_header_default">
+        <xpath expr="//t[@t-set='_nav_class']" position="replace">
+            <t t-set="_nav_class" t-valuef="mx-auto"/>
+        </xpath>
+    </template>
+</odoo>

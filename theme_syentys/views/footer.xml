@@ -1,0 +1,186 @@
+<odoo>
+    <!-- Inherit footer layout template -->
+    <template id="custom_footer" inherit_id="website.layout">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer" style="">
+                <section class="s_text_block pt48" data-snippet="s_text_block" data-name="Text"
+                         style="background-image: none;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 o_colored_level pb16">
+                                <h4>
+                                    <b>
+                                        <img class="img-fluid o_we_custom_image"
+                                             src="/theme_syentys/static/src/img/pictures/syentys_logo.png" alt=""
+                                             loading="lazy"
+                                             data-original-id="430"
+                                             data-original-src="/theme_syentys/static/src/img/pictures/syentys_logo.png"
+                                             data-mimetype="image/png" data-original-title="" title=""
+                                             aria-describedby="tooltip699086"/>
+                                    </b>
+                                    <br/>
+                                </h4>
+                            </div>
+                            <div class="col-lg-9 o_colored_level pb0">
+                                <p class="lead">
+                                    <font style="" class="text-600">Syentys est une société de conseil, de formation et
+                                        de développement informatique qui accompagne ses clients dans leur
+                                        transformation digitale.
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block" data-snippet="s_text_block" data-name="Text"
+                         style="background-image: none;" data-original-title="" title=""
+                         aria-describedby="tooltip502554">
+                    <div class="container">
+                        <div class="row align-items-center" data-original-title="" title=""
+                             aria-describedby="tooltip338719">
+                            <div class="pb24 o_colored_level col-lg-3" data-original-title="" title=""
+                                 aria-describedby="tooltip56482">
+                                <ul class="pl-3 mb-0">
+                                    <li>
+                                        <a href="/">Accueil</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contactus">Contactez-nous</a>
+                                    </li>
+                                    <li>
+                                        <a href="/privacy">Politique de confidentialité</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pb24 o_colored_level col-lg-3">
+                                <ul class="list-unstyled mb-0">
+                                    <li t-if="res_company.phone" data-original-title="" title=""
+                                        aria-describedby="tooltip638722">
+                                        <i class="fa fa-phone fa-fw mr-2"></i>
+                                        <span t-field="res_company.phone" class="o_force_ltr">
+                                            <a t-att-href="'tel: %s' %res_company.phone"/>
+                                        </span>
+                                    </li>
+                                    <li t-if="res_company.email" data-original-title="" title=""
+                                        aria-describedby="tooltip106214">
+                                        <i class="fa fa-envelope fa-fw mr-2"></i>
+                                        <span t-field="res_company.email">
+                                            <a t-att-href="'mailto: %s' %res_company.email"/>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pb24 o_colored_level col-lg-3" data-original-title="" title=""
+                                 aria-describedby="tooltip10071">
+                                <div class="s_share text-center" data-snippet="s_share" data-name="Social Media"
+                                     data-original-title="" title="" aria-describedby="tooltip181245">
+                                    <h5 class="s_share_title d-none">Partager</h5>
+                                    <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                        <i class="fa fa-1x fa-facebook rounded-circle shadow-sm"></i>
+                                    </a>
+                                    <a href="/website/social/twitter" class="s_share_twitter" target="_blank"
+                                       data-original-title="" title="" aria-describedby="tooltip488098">
+                                        <i class="fa fa-1x rounded-circle shadow-sm fa-linkedin" data-original-title=""
+                                           title="" aria-describedby="tooltip495129">
+                                        </i>
+                                    </a>
+                                    <a href="/website/social/instagram" class="s_share_instagram" target="_blank">
+                                        <i class="fa fa-instagram rounded-circle shadow-sm fa-1x" data-original-title=""
+                                           title="" aria-describedby="tooltip615019">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="pb24 o_colored_level col-lg-3" data-original-title="" title=""
+                                 aria-describedby="tooltip977071" style="text-align: right;">
+                                <a href="/" data-original-title="" title="" aria-describedby="tooltip179653">
+                                    <i class="fa shadow-sm float-right rounded-circle fa-home fa-1x"
+                                       data-original-title="" title="" aria-describedby="tooltip471558">
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block pb8 pt0" data-snippet="s_text_block" data-name="Text"
+                         style="background-image: none;" data-original-title="" title=""
+                         aria-describedby="tooltip601272">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="o_colored_level col-lg-3 pb0 pt24" style="">
+                                <p>
+                                    <img class="img-fluid o_we_custom_image mx-auto d-block"
+                                         src="/theme_syentys/static/src/img/pictures/syentys_odoo.png" alt=""
+                                         data-original-id="499"
+                                         data-original-src="/theme_syentys/static/src/img/pictures/syentys_odoo.png"
+                                         data-mimetype="image/png" data-original-title="" title=""
+                                         aria-describedby="tooltip120994" style="" width="128"
+                                         loading="lazy"/>
+                                    <br/>
+                                </p>
+                            </div>
+                            <div class="o_colored_level col-lg-3 pb0">
+                                <p>
+                                    <img class="img-fluid o_we_custom_image mx-auto d-block"
+                                         src="/theme_syentys/static/src/img/pictures/syentys_docker.png" alt=""
+                                         data-original-id="498"
+                                         data-original-src="/theme_syentys/static/src/img/pictures/syentys_docker.png"
+                                         data-mimetype="image/png" data-original-title="" title=""
+                                         aria-describedby="tooltip411235" style="" width="128"
+                                         loading="lazy"/>
+                                </p>
+                            </div>
+                            <div class="o_colored_level col-lg-3 pb8" style="">
+                                <img class="img-fluid o_we_custom_image mx-auto d-block"
+                                     src="/theme_syentys/static/src/img/pictures/syentys_kubernetes.png" alt=""
+                                     data-original-id="497"
+                                     data-original-src="/theme_syentys/static/src/img/pictures/syentys_kubernetes.png"
+                                     data-mimetype="image/png" data-original-title="" title=""
+                                     aria-describedby="tooltip628968" style="width: 25% !important;"
+                                     width="1024" loading="lazy"/>
+                            </div>
+                            <div class="pb24 o_colored_level col-lg-3" style="" data-original-title="" title=""
+                                 aria-describedby="tooltip852787">
+                                <div class="s_share text-center" data-snippet="s_share" data-name="Social Media"
+                                     data-original-title="" title="" aria-describedby="tooltip424993">
+                                    <h5 class="s_share_title d-none">Partager</h5>
+                                    <a href="/website/social/facebook" class="s_share_facebook" target="_blank"
+                                       data-original-title="" title="">
+                                        <img class="img-fluid o_we_custom_image"
+                                             src="/theme_syentys/static/src/img/pictures/syentys_psm.png" alt=""
+                                             data-original-id="500"
+                                             data-original-src="/theme_syentys/static/src/img/pictures/syentys_psm.png"
+                                             data-mimetype="image/png" data-original-title="" title=""
+                                             aria-describedby="tooltip230139" style="width: 25% !important;"
+                                             width="128" loading="lazy"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Inherit layout template -->
+    <template id="option_footer_scrolltop" inherit_id="website.layout">
+        <xpath expr="//div[@id='footer']" position="after">
+            <!-- Scroll to Top option -->
+            <div id="o_footer_scrolltop_wrapper" class="container h-0 d-flex align-items-center justify-content-center">
+                <a id="o_footer_scrolltop" role="button" href="#top" title=""
+                   class="d-flex align-items-center justify-content-center o_animate o_anim_bounce_in o_visible btn btn-custom text-o-color-4 bg-o-color-1 rounded-circle"
+                   data-original-title="Faire défiler vers le haut"
+                   style="border-width: 1px; border-style: solid; border-color: rgb(52, 28, 140);">
+                    <span class="fa fa-chevron-up fa-1x" data-original-title="" title=""
+                          aria-describedby="tooltip540005"></span>
+                </a>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Inherit Brand Promotion template -->
+    <template id="custom_brand_promotion" inherit_id="web.brand_promotion">
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace"></xpath>
+    </template>
+</odoo>

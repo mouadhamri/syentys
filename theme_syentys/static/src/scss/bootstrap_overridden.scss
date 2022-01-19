@@ -1,0 +1,99 @@
+// Headings
+
+$headings-line-height: 1.1 !default;
+$headings-font-weight: 600 !default;
+
+
+// Buttons
+
+$btn-font-weight: 700;
+
+// Home Style
+.nav-item.ml-lg-auto.o_no_autohide_item {
+    margin-left: -100px !important;
+}
+
+.nav-item.ml-lg-auto.o_no_autohide_item .nav-link.font-weight-bold:not(.dropdown-toggle){
+  visibility: hidden;
+}
+
+.nav-item.ml-lg-auto.o_no_autohide_item .nav-link.font-weight-bold:not(.dropdown-toggle)::after{
+  font-family: FontAwesome;
+  content: "\f007";
+  visibility: visible;
+}
+
+.nav-item.dropdown.ml-lg-auto.o_no_autohide_item .dropdown-toggle span{
+  visibility: hidden;
+}
+
+.nav-item.dropdown.ml-lg-auto.o_no_autohide_item .dropdown-toggle span::after{
+  font-family: FontAwesome;
+  content: "\f007";
+  visibility: visible;
+}
+
+
+.s_embed_code.o_half_screen_height.text-center.pt256{
+  padding-top: 0px !important;
+  margin-top: 80px !important;
+  min-height: 0px !important;
+}
+
+.wrapper{
+  display: flex;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.wrapper .static-txt{
+  color: #79F28B;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Nunito", "Odoo Unicode Support Noto", serif;
+  margin-left: auto !important;
+}
+.wrapper .dynamic-txts{
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+  margin-right: auto !important;
+  margin-left: -20px;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Nunito", "Odoo Unicode Support Noto", serif;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite
+}
+@keyframes slide {
+  100%{
+    top: -320px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 80px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #341C8C;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}

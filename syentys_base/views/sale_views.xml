@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- sale.order Inherited Form -->
+        <record id="sale_order_task" model="ir.ui.view">
+            <field name="name">sale.order.task</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='order_lines']//field[@name='order_line']//tree//field[@name='price_unit']" position="after">
+                    <field name="project_ids" invisible="1"/>
+                    <field name="task_ids" widget="many2many_tags" attrs="{'invisible': ['|','|', ('state', 'in', ['draft', 'sent']), ('project_ids', '=', []), ('qty_delivered_method', '!=', 'manual')]}"/>
+                    <button name="%(sale_add_task_wizard_action)d" type="action" string="Ajouter US" attrs="{'invisible': ['|','|', ('state', 'in', ['draft', 'sent']), ('project_ids', '=', []), ('qty_delivered_method', '!=', 'manual')]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,816 @@
+<odoo>
+    <!-- Inherit homepage template -->
+    <template id="custom_homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section
+                        class="s_cover o_colored_level s_parallax_no_overflow_hidden o_cc o_cc4 pb88 pt0 o_half_screen_height"
+                        data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover"
+                        style="position: relative; background-image: none;"
+                        data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/12_001&quot;,&quot;flip&quot;:[&quot;y&quot;]}"
+                        data-original-title="" title="" aria-describedby="tooltip176575"
+                        id="D%C3%89MARRONS-VOTRE-PROJET" data-anchor="true">
+                    <div class="o_we_shape o_web_editor_Airy_12_001"
+                         style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/12_001.svg?c1=%239BA9BB&amp;c3=%23ffffff&amp;flip=y&quot;); background-position: 50% 100%;"/>
+                    <div class="s_allow_columns container">
+                        <div class="row">
+                            <div class="o_colored_level col-lg-12 pb136" style="" data-original-title="" title=""
+                                 aria-describedby="tooltip949051">
+                                <section class="s_embed_code o_half_screen_height pt256 text-center"
+                                         data-snippet="s_embed_code" data-name="Embed Code">
+                                    <div class="s_embed_code_embedded container o_not_editable">
+                                        <center>
+                                            <div class="wrapper">
+                                                <div class="static-txt">Syentys,</div>
+                                                <ul class="dynamic-txts">
+                                                    <li>
+                                                        <span>votre partenaire ERP&amp;nbsp;&amp;nbsp;</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>privilégié en France&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>n°1 dans le Grand Est</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </section>
+                                <p style="text-align: left;">
+                                    <br/>
+                                </p>
+                                <h1 style="text-align: center;" data-original-title="" title=""
+                                    aria-describedby="tooltip710563">
+                                    <a class="mb-2 o_animating btn btn-fill-secondary rounded-circle btn-lg"
+                                       href="/contactus" data-original-title="" title="" style="">DÉMARRONS VOTRE PROJET
+                                    </a>
+                                    <br/>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_three_columns o_colored_level pb0 pt56" data-vcss="001" data-snippet="s_three_columns"
+                         data-name="Columns" style="background-image: none;" data-original-title="" title=""
+                         aria-describedby="tooltip446041">
+                    <div style="text-align: center;" class="container" data-original-title="" title=""
+                         aria-describedby="tooltip739162">
+                        <h3>
+                            <font class="text-black" style="font-weight: normal;">Découvrez tout ce que l'</font>
+                            <font class="text-o-color-1" style="font-weight: normal;">
+                                <span style="font-weight: bolder;">on peut faire pour</span>
+                            </font>
+                            <font class="text-o-color-1" style="font-weight: bolder;">vous</font>
+                        </h3>
+                        <h3 style="text-align: center;">
+                            <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(226, 51, 255) 100%);"
+                                  class="text-gradient"/>
+                            <br/>
+                        </h3>
+                        <a href="http://NOS SOLUTIONS"
+                           class="btn btn-fill-custom text-o-color-4 bg-o-color-3 rounded-circle btn-lg"
+                           style="border-width: 1px; border-style: solid; border-color: rgb(217, 82, 181);"
+                           data-original-title="" title="">NOS SOLUTION
+                        </a>
+                    </div>
+                </section>
+                <section class="s_text_image pb16 o_cc o_cc3 o_colored_level pt88"
+                         data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/02_001&quot;,&quot;flip&quot;:[&quot;y&quot;]}"
+                         data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;">
+                    <div class="o_we_shape o_web_editor_Origins_02_001 o_we_flip_y"/>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                <img src="/theme_syentys/static/src/img/pictures/syentys_scrum.svg"
+                                     class="img mx-auto pull-right" alt="" loading="lazy" data-original-title=""
+                                     title="" aria-describedby="tooltip730233" data-original-id="506"
+                                     data-original-src="/theme_syentys/static/src/img/pictures/syentys_scrum.svg"
+                                     data-mimetype="image/svg+xml" data-resize-width="undefined"
+                                     style="width: 100% !important;"/>
+                            </div>
+                            <div class="col-lg-5 offset-lg-1 o_colored_level pb0 pt64" style="" data-original-title=""
+                                 title="" aria-describedby="tooltip554333">
+                                <p>
+                                    <br/>
+                                </p>
+                                <h2>
+                                    <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(217, 82, 181) 100%);"
+                                          class="text-gradient">Syentys
+                                    </font>
+                                </h2>
+                                <p>&amp;nbsp;</p>
+                                <h5>Always Improving</h5>
+                                <p class="o_default_snippet_text">Thanks to our running release system, benefit from all
+                                    updates (security and new features) in real time.
+                                </p>
+                                <p>&amp;nbsp;</p>
+                                <h5>Scalable and Modular</h5>
+                                <p class="o_default_snippet_text">Whether you start small or are already a large
+                                    company, our solution adapts to your needs and grows with you.
+                                </p>
+                                <p class="o_default_snippet_text">
+                                    <br/>
+                                </p>
+                                <h5>Scalable and Modular</h5>
+                                <p>Whether you start small or are already a large company, our solution adapts to your
+                                    needs and grows with you.
+                                </p>
+                                <p>
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_title o_colored_level pb8 pt136" data-vcss="001" data-snippet="s_title"
+                         data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h3 style="text-align: center;">
+                            <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(217, 82, 181) 100%);"
+                                  class="text-gradient">
+                                NOTRE DÉMARCHE DE TRAVAIL
+                            </font>
+                        </h3>
+                    </div>
+                </section>
+                <section class="s_process_steps o_colored_level pt0 pb120" data-snippet="s_process_steps"
+                         data-name="Steps" style="background-image: none;">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-lg-3 s_process_step pt24 o_colored_level pb4 o_animate o_anim_fade_in_right o_visible"
+                                 style="">
+                                <div class="s_process_step_icon">
+                                    <span>
+                                        <i class="fa mx-auto rounded-circle bg-primary fa-handshake-o fa-3x"
+                                           data-original-title="" title="" aria-describedby="tooltip755911">
+                                        </i>
+                                    </span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4>Prise De Contact</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 s_process_step pt24 pb24 o_colored_level o_animate o_anim_fade_in_right o_visible"
+                                 style="animation-delay: 0.5s !important;">
+                                <div class="s_process_step_icon">
+                                    <span>
+                                        <i class="fa mx-auto rounded-circle bg-o-color-5 fa-laptop fa-3x"
+                                           data-original-title="" title="" aria-describedby="tooltip432621">
+                                        </i>
+                                    </span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4>Démo Gratuite</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 s_process_step pt24 pb24 o_colored_level o_animate o_anim_fade_in_right o_visible"
+                                 style="animation-delay: 1s !important;">
+                                <div class="s_process_step_icon">
+                                    <span>
+                                        <i class="fa mx-auto rounded-circle fa-file-text-o bg-400 fa-3x"
+                                           data-original-title="" title="" aria-describedby="tooltip337716">
+                                        </i>
+                                    </span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4>Devis</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 s_process_step pt24 pb24 o_colored_level o_animate o_anim_fade_in_right o_visible"
+                                 style="animation-delay: 1.5s !important;">
+                                <div class="s_process_step_icon">
+                                    <span>
+                                        <i class="fa mx-auto rounded-circle bg-o-color-3 fa-3x fa-tags"
+                                           data-original-title="" title="" aria-describedby="tooltip51755">
+                                        </i>
+                                    </span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4>Suivi et support</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_title o_colored_level pb8 o_cc o_cc3 pt48" data-vcss="001" data-snippet="s_title"
+                         data-name="Title" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h3 style="text-align: center;">
+                            <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(217, 82, 181) 100%);"
+                                  class="text-gradient">
+                                NOS SERVICES
+                            </font>
+                        </h3>
+                    </div>
+                </section>
+                <section class="s_showcase pt48 o_colored_level bg-100 pb72" data-vcss="002" data-snippet="s_showcase"
+                         data-name="Showcase" style="position: relative; background-image: none;">
+                    <div class="container">
+                        <div class="row no-gutters s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
+                            <div class="col-lg text-lg-right">
+                                <div class="row">
+                                    <div class="col-lg-12 pt24 pb24 o_colored_level o_animate o_anim_fade_in_left o_visible"
+                                         data-name="Block" style="">
+                                        <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+                                            <i class="s_showcase_icon fa fa-2x mr-3 mr-lg-0 ml-lg-3 fa-code"
+                                               data-original-title="" title="" aria-describedby="tooltip461265">
+                                            </i>
+                                            <h3>Intégration ERP &amp;amp; CRM
+                                                <br/>
+                                            </h3>
+                                        </div>
+                                        <p>Une brève description de cette fonctionnalité intéressante.</p>
+                                        <p>Une brève description de cette fonctionnalité intéressante</p>
+                                    </div>
+                                    <div class="col-lg-12 pt24 pb24 o_colored_level o_animate o_anim_fade_in_left o_visible"
+                                         data-name="Block" style="">
+                                        <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+                                            <i class="s_showcase_icon fa fa-2x mr-3 mr-lg-0 ml-lg-3 fa-desktop"
+                                               data-original-title="" title="" aria-describedby="tooltip931994">
+                                            </i>
+                                            <h3>Formation</h3>
+                                        </div>
+                                        <p>Une brève description de cette fonctionnalité intéressante.</p>
+                                        <p>Une brève description de cette fonctionnalité intéressante.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div class="w-50 h-100 border-right"/>
+                            </div>
+                            <div class="col-lg">
+                                <div class="row">
+                                    <div class="col-lg-12 pt24 pb24 o_colored_level o_animate o_anim_fade_in_right o_visible"
+                                         data-name="Block" style="">
+                                        <div class="s_showcase_title d-flex mb-2">
+                                            <i class="s_showcase_icon fa fa-2x mr-3 fa-pie-chart"></i>
+                                            <h3>Étude &amp;amp; conseil
+                                                <br/>
+                                            </h3>
+                                        </div>
+                                        <p>Une brève description de cette fonctionnalité intéressante.</p>
+                                        <p>Une brève description de cette fonctionnalité intéressante.</p>
+                                    </div>
+                                    <div class="col-lg-12 pt24 pb24 o_colored_level o_animate o_anim_fade_in_right o_visible"
+                                         data-name="Block" style="">
+                                        <div class="s_showcase_title d-flex mb-2">
+                                            <i class="s_showcase_icon fa fa-2x mr-3 fa-life-bouy" data-original-title=""
+                                               title="" aria-describedby="tooltip735972">
+                                            </i>
+                                            <h3>Support &amp;amp; TMA
+                                                <br/>
+                                            </h3>
+                                        </div>
+                                        <p>Une brève description de cette fonctionnalité intéressante.</p>
+                                        <p>Une brève description de cette fonctionnalité intéressante.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_three_columns o_colored_level pt0 pb136 bg-100" data-vcss="001"
+                         data-snippet="s_three_columns" data-name="Columns"
+                         style="position: relative; background-image: none;" data-original-title="" title=""
+                         aria-describedby="tooltip639160"
+                         data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/02_001&quot;,&quot;flip&quot;:[]}">
+                    <div class="o_we_shape o_web_editor_Origins_02_001"/>
+                    <div style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip739162"
+                         class="container">
+                        <h3 style="text-align: center;" data-original-title="" title=""
+                            aria-describedby="tooltip988342">
+                            <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(226, 51, 255) 100%);"
+                                  class="text-gradient"/>
+                            <a href="http://NOS SOLUTIONS"
+                               class="btn btn-fill-custom text-o-color-4 bg-o-color-3 rounded-circle btn-lg"
+                               style="border-width: 1px; border-style: solid; border-color: rgb(217, 82, 181);"
+                               data-original-title="" title="">NOS SERVICES</a>&amp;nbsp;
+                        </h3>
+                    </div>
+                </section>
+                <section class="s_three_columns o_colored_level pb4 o_half_screen_height pt64" data-vcss="001"
+                         data-snippet="s_three_columns" data-name="Columns" style="background-image: none;"
+                         data-original-title="" title="" aria-describedby="tooltip578943">
+                    <div class="container">
+                        <h3 style="text-align: center;">
+                            <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(217, 82, 181) 100%);"
+                                  class="text-gradient"/>
+                            <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(217, 82, 181) 100%);"
+                                  class="text-gradient">NOS RÉFÉRENCES
+                            </font>
+                        </h3>
+                        <h3 style="text-align: center;">
+                            <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);"
+                                  class="text-gradient"/>
+                        </h3>
+                        <h3 style="text-align: center;">
+                            <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);"
+                                  class="text-gradient"/>
+                            <br/>
+                        </h3>
+                        <div class="row d-flex align-items-stretch" data-original-title="" title=""
+                             aria-describedby="tooltip100348">
+                            <div class="col-lg-4 s_col_no_bgcolor o_animate o_anim_fade_in_left o_visible pt0 pb0"
+                                 style="">
+                                <div class="card bg-white h-100 shadow rounded"
+                                     style="border-width: 0px !important; border-radius: 15px !important;">
+                                    <img class="card-img-top" src="/web/image/432-872ac2b1/pixlr-bg-result.png" alt=""
+                                         style="padding: 8px !important;" loading="lazy" data-original-title="" title=""
+                                         aria-describedby="tooltip501572" data-original-id="430"
+                                         data-original-src="/web/image/430-dc65eec2/pixlr-bg-result.png"
+                                         data-mimetype="image/png" data-resize-width="690"/>
+                                    <div class="card-body" data-original-title="" title=""
+                                         aria-describedby="tooltip907412">
+                                        <h3 class="card-title">Societé 1
+                                            <br/>
+                                        </h3>
+                                        <p class="card-text">
+                                            Our solution is suitable for Hotels as well. We help management to optimize
+                                            their time and employee to be more efficient and more productive. Discover
+                                            our study.
+                                        </p>
+                                        <p class="card-text">
+                                            <br/>
+                                        </p>
+                                        <p class="card-text">
+                                            <br/>
+                                        </p>
+                                        <p class="card-text" style="text-align: center;" data-original-title="" title=""
+                                           aria-describedby="tooltip124628">
+                                            <a href="http://Voir plus" data-original-title="" title="">
+                                                <font style="" class="text-o-color-1">Voir plus</font>
+                                            </a>&amp;nbsp;
+                                            <span class="fa fa-chevron-right text-o-color-1" data-original-title=""
+                                                  title="" aria-describedby="tooltip473538">
+                                            </span>
+                                        </p>
+                                        <p class="card-text" style="text-align: center;" data-original-title="" title=""
+                                           aria-describedby="tooltip124628">&amp;nbsp;
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor o_animate o_anim_fade_in_left o_visible pt0 pb0"
+                                 style="">
+                                <div class="card bg-white h-100 rounded shadow"
+                                     style="border-width: 0px !important; border-radius: 15px !important;">
+                                    <img class="card-img-top" src="/web/image/432-872ac2b1/pixlr-bg-result.png" alt=""
+                                         style="padding: 8px !important;" loading="lazy" data-original-title="" title=""
+                                         aria-describedby="tooltip501572" data-original-id="430"
+                                         data-original-src="/web/image/430-dc65eec2/pixlr-bg-result.png"
+                                         data-mimetype="image/png" data-resize-width="690"/>
+                                    <div class="card-body" data-original-title="" title=""
+                                         aria-describedby="tooltip907412">
+                                        <h3 class="card-title">Societé 2
+                                            <br/>
+                                        </h3>
+                                        <p class="card-text">
+                                            Our solution is suitable for Hotels as well. We help management to optimize
+                                            their time and employee to be more efficient and more productive. Discover
+                                            our study.
+                                        </p>
+                                        <p class="card-text">
+                                            <br/>
+                                        </p>
+                                        <p class="card-text">
+                                            <br/>
+                                        </p>
+                                        <p class="card-text" style="text-align: center;" data-original-title="" title=""
+                                           aria-describedby="tooltip124628">
+                                            <a href="http://Voir plus" data-original-title="" title="">Voir plus&amp;nbsp;
+                                                <span class="fa fa-chevron-right" data-original-title="" title=""
+                                                      aria-describedby="tooltip750729" style="">
+                                                </span>
+                                            </a>
+                                        </p>
+                                        <p class="card-text" style="text-align: center;" data-original-title="" title=""
+                                           aria-describedby="tooltip124628">&amp;nbsp;
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor o_animate o_anim_fade_in_left o_visible pt0 pb0"
+                                 style="">
+                                <div class="card bg-white h-100 shadow rounded"
+                                     style="border-width: 0px !important; border-radius: 15px !important;">
+                                    <img class="card-img-top" src="/web/image/432-872ac2b1/pixlr-bg-result.png" alt=""
+                                         style="padding: 8px !important;" loading="lazy" data-original-title="" title=""
+                                         aria-describedby="tooltip501572" data-original-id="430"
+                                         data-original-src="/web/image/430-dc65eec2/pixlr-bg-result.png"
+                                         data-mimetype="image/png" data-resize-width="690"/>
+                                    <div class="card-body" data-original-title="" title=""
+                                         aria-describedby="tooltip907412">
+                                        <h3 class="card-title">Societé 3
+                                            <br/>
+                                        </h3>
+                                        <p class="card-text">
+                                            Our solution is suitable for Hotels as well. We help management to optimize
+                                            their time and employee to be more efficient and more productive. Discover
+                                            our study.
+                                        </p>
+                                        <p class="card-text">
+                                            <br/>
+                                        </p>
+                                        <p class="card-text">
+                                            <br/>
+                                        </p>
+                                        <p class="card-text" style="text-align: center;" data-original-title="" title=""
+                                           aria-describedby="tooltip124628">
+                                            <a href="http://Voir plus" data-original-title="" title="">Voir plus&amp;nbsp;
+                                                <span class="fa fa-chevron-right o_animate o_anim_zoom_in_right o_animate_both_scroll"
+                                                      data-original-title="" title="" aria-describedby="tooltip606588"
+                                                      style="">
+                                                </span>
+                                            </a>
+                                        </p>
+                                        <p class="card-text" style="text-align: center;" data-original-title="" title=""
+                                           aria-describedby="tooltip124628">&amp;nbsp;
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_three_columns o_colored_level pt24 pb136" data-vcss="001"
+                         data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
+                    <div style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip739162"
+                         class="container">
+                        <h3 style="text-align: center;" data-original-title="" title=""
+                            aria-describedby="tooltip988342">
+                            <font style="background-image: linear-gradient(135deg, rgb(52, 28, 140) 0%, rgb(226, 51, 255) 100%);"
+                                  class="text-gradient"/>
+                            <a href="http://NOS SOLUTIONS"
+                               class="btn btn-fill-custom text-o-color-4 bg-o-color-3 rounded-circle btn-lg"
+                               style="border-width: 1px; border-style: solid; border-color: rgb(217, 82, 181);"
+                               data-original-title="" title="">NOS RÉFÉRENCES</a>&amp;nbsp;
+                        </h3>
+                    </div>
+                </section>
+                <section class="s_quotes_carousel_wrapper o_colored_level" data-vxml="001" data-vcss="001"
+                         data-snippet="s_quotes_carousel" data-name="Quotes"
+                         style="background-image: none; position: relative;">
+                    <div class="s_quotes_carousel carousel slide s_carousel_default" data-interval="10000"
+                         id="myCarousel1635972262394"
+                         style="position: relative; background-color: rgb(245, 249, 249) !important; background-image: none;"
+                         data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/07_002&quot;,&quot;colors&quot;:{&quot;c3&quot;:&quot;#ffffff&quot;,&quot;c4&quot;:&quot;#F5F9F9&quot;,&quot;c5&quot;:&quot;#341C8C&quot;},&quot;flip&quot;:[]}">
+                        <div class="o_we_shape o_web_editor_Origins_07_002"
+                             style="background-image: url(&quot;/web_editor/shape/web_editor/Origins/07_002.svg?c3=%23ffffff&amp;c4=%23F5F9F9&amp;c5=%23341C8C&quot;);"/>
+                        <ol class="carousel-indicators o_we_no_overlay">
+                            <li data-target="#undefined" data-slide-to="1" class="active"/>
+                            <li data-target="#undefined" data-slide-to="2"/>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item o_colored_level pt104 pb64 active"
+                                 style="background-image: none; background-position: 50% 50%;" data-name="Slide">
+                                <div class="container">
+                                    <blockquote class="s_blockquote blockquote ml-auto w-100 s_blockquote_classic"
+                                                data-name="Blockquote">
+                                        <i class="fa fa-quote-left rounded float-left s_blockquote_icon bg-200 fa-1x"
+                                           data-original-title="" title="" aria-describedby="tooltip255826">
+                                        </i>
+                                        <div class="s_blockquote_content o_cc1 bg-200 shadow"
+                                             style="background-image: none;">
+                                            <p>1. Syentys une citation d'un de vos clients ici. Les citations sont une
+                                                superbe manière de construire la confiance dans vos produits ou
+                                                services.
+                                            </p>
+                                            <footer class="blockquote-footer">
+                                                <img src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     class="s_blockquote_avatar img rounded-circle mr-2" alt=""
+                                                     loading="lazy" data-original-id="177"
+                                                     data-original-src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                                <span class="s_blockquote_author o_default_snippet_text">
+                                                    <b class="o_default_snippet_text">Iris DOE</b>
+                                                    • PDG de MyCompany
+                                                </span>
+                                            </footer>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="carousel-item o_colored_level pb8 pt104"
+                                 style="background-image: none; background-position: 50% 50%;" data-name="Slide">
+                                <div class="container">
+                                    <blockquote class="s_blockquote s_blockquote_classic blockquote ml-auto w-100"
+                                                data-name="Blockquote">
+                                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-2 s_blockquote_icon">
+
+                                        </i>
+                                        <div class="s_blockquote_content o_cc1 bg-o-color-2" style="">
+                                            <p>Ecrivez une citation d'un de vos clients ici. Les citations sont une
+                                                superbe manière de construire la confiance dans vos produits ou
+                                                services.
+                                            </p>
+                                            <footer class="blockquote-footer">
+                                                <img src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     class="s_blockquote_avatar img rounded-circle mr-2" alt=""
+                                                     loading="lazy" data-original-id="177"
+                                                     data-original-src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                                <span class="s_blockquote_author o_default_snippet_text">
+                                                    <b class="o_default_snippet_text">Iris DOE</b>
+                                                    • PDG de MyCompany
+                                                </span>
+                                            </footer>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="carousel-item o_colored_level pb8 pt104"
+                                 style="background-image: none; background-position: 50% 50%;" data-name="Slide">
+                                <div class="container">
+                                    <blockquote class="s_blockquote s_blockquote_classic blockquote ml-auto w-100"
+                                                data-name="Blockquote">
+                                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-2 s_blockquote_icon">
+
+                                        </i>
+                                        <div class="s_blockquote_content o_cc1 bg-o-color-2" style="">
+                                            <p>Ecrivez une citation d'un de vos clients ici. Les citations sont une
+                                                superbe manière de construire la confiance dans vos produits ou
+                                                services.
+                                            </p>
+                                            <footer class="blockquote-footer">
+                                                <img src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     class="s_blockquote_avatar img rounded-circle mr-2" alt=""
+                                                     loading="lazy" data-original-id="177"
+                                                     data-original-src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                                <span class="s_blockquote_author o_default_snippet_text">
+                                                    <b class="o_default_snippet_text">Iris DOE</b>
+                                                    • PDG de MyCompany
+                                                </span>
+                                            </footer>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="carousel-item o_colored_level pb72 pt88"
+                                 style="background-image: none; background-position: 50% 50%;" data-name="Slide">
+                                <div class="container">
+                                    <blockquote class="s_blockquote s_blockquote_classic blockquote ml-auto w-100"
+                                                data-name="Blockquote">
+                                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-2 s_blockquote_icon">
+
+                                        </i>
+                                        <div class="s_blockquote_content o_cc1 bg-o-color-2" style="">
+                                            <p>Ecrivez une citation d'un de vos clients ici. Les citations sont une
+                                                superbe manière de construire la confiance dans vos produits ou
+                                                services.
+                                            </p>
+                                            <footer class="blockquote-footer">
+                                                <img src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     class="s_blockquote_avatar img rounded-circle mr-2" alt=""
+                                                     loading="lazy" data-original-id="177"
+                                                     data-original-src="/theme_syentys/static/src/img/pictures/syentys_company_team_image.jpg"
+                                                     data-mimetype="image/jpeg"/>
+                                                <span class="s_blockquote_author o_default_snippet_text">
+                                                    <b class="o_default_snippet_text">Iris DOE</b>
+                                                    • PDG de MyCompany
+                                                </span>
+                                            </footer>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img"
+                             aria-label="Précedent" title="Précedent" data-target="#myCarousel1635972262394">
+                            <span class="carousel-control-prev-icon"/>
+                            <span class="sr-only o_default_snippet_text">Précédent</span>
+                        </div>
+                        <div class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img"
+                             aria-label="Suivant" title="Suivant" data-target="#myCarousel1635972262394">
+                            <span class="carousel-control-next-icon"/>
+                            <span class="sr-only o_default_snippet_text">Suivant</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_numbers o_cc o_cc4 o_colored_level pt0 pb0" data-snippet="s_numbers"
+                         data-name="Numbers" style="background-image: none;"
+                         data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Blocks/01_001&quot;,&quot;flip&quot;:[]}">
+                    <div class="o_we_shape o_web_editor_Blocks_01_001"/>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 text-center pt24 pb24 o_colored_level">
+                                <span class="s_number display-4">
+                                    <span class="fa text-o-color-5 fa-check-square-o o_animate o_anim_bounce_in o_visible"
+                                          data-original-title="" title="" aria-describedby="tooltip7731" style="">
+                                    </span>
+                                    <br/>
+                                    <span class="o_animated_text o_animate o_anim_fade_in o_visible"
+                                          style="font-weight: bolder;">30
+                                    </span>
+                                </span>
+                                <h6>
+                                    <font style="" class="text-o-color-5">Années d'expérience
+                                    </font>
+                                </h6>
+                            </div>
+                            <div class="col-lg-3 text-center pt24 pb24 o_colored_level" style="">
+                                <span class="s_number display-4">
+                                    <span class="fa fa-group text-o-color-5 o_animate o_anim_bounce_in o_visible"
+                                          data-original-title="" title="" aria-describedby="tooltip5320" style="">
+                                    </span>
+                                    <br/>1000
+                                </span>
+                                <h6>
+                                    <font style="" class="text-o-color-5">Collaborateurs</font>
+                                    <br/>
+                                </h6>
+                            </div>
+                            <div class="col-lg-3 text-center pt24 pb24 o_colored_level" style="">
+                                <span class="s_number display-4">
+                                    <span class="fa fa-user-secret text-o-color-5 o_animate o_anim_bounce_in o_visible"
+                                          data-original-title="" title="" aria-describedby="tooltip432508" style="">
+                                    </span>
+                                    <br/>2
+                                    <br/>
+                                </span>
+                                <h6>
+                                    <font style="" class="text-o-color-5">Consultants Multilingues</font>
+                                </h6>
+                            </div>
+                            <div class="col-lg-3 text-center pt24 pb24 o_colored_level">
+                                <span class="s_number display-4">
+                                    <span class="fa fa-globe text-o-color-5 o_animate o_anim_bounce_in o_visible"
+                                          data-original-title="" title="" aria-describedby="tooltip292885" style="">
+                                    </span>
+                                    <br/>3
+                                </span>
+                                <h6>
+                                    <font style="" class="text-o-color-5">
+                                        Agences en France et à l'international
+                                    </font>
+                                    <br/>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_image o_cc o_cc3 o_colored_level pt40 pb104" data-snippet="s_text_image"
+                         data-name="Text - Image" style="background-image: none; position: relative;"
+                         data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/02_001&quot;,&quot;flip&quot;:[]}">
+                    <div class="o_we_shape o_web_editor_Origins_02_001" style=""/>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 o_colored_level pt0 pb0" style="">
+                                <h2>
+                                    <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);"
+                                          class="text-gradient">
+                                        <span class="fa fa-comments-o float-right fa-2x" data-original-title="" title=""
+                                              aria-describedby="tooltip461957"
+                                              style="color: rgb(121, 242, 139) !important;">
+                                        </span>
+                                    </font>
+                                </h2>
+                                <h2>
+                                    <font style="background-image: linear-gradient(135deg, var(--o-color-1) 0%, var(--o-color-3) 100%);"
+                                          class="text-gradient">Désirez-vous que Syentys vous contacte ?
+                                    </font>
+                                </h2>
+                                <p>
+                                    <br/>
+                                </p>
+                                <div class="s_hr text-left pb0 pt0" data-snippet="s_hr" data-name="Separator">
+                                    <hr class="w-100 mx-auto"
+                                        style="border-top-style: solid; border-top-color: rgb(233, 236, 239) !important; border-top-width: 3px !important;"/>
+                                </div>
+                                <p>
+                                    <br/>
+                                </p>
+                                <h4>
+                                    <font style="" class="text-o-color-1">Ou Appelez-nous&amp;nbsp; sur ce numéro:
+                                    </font>
+                                </h4>
+                                <h3>
+                                    <font style="" class="text-o-color-1">+333 33 33 33 33</font>
+                                    <br/>
+                                </h3>
+                            </div>
+                            <div class="col-lg-6 pt16 pb16 offset-lg-1 o_colored_level">
+                                <section class="s_website_form pt16 pb16" data-vcss="001" data-snippet="s_website_form"
+                                         data-name="Form">
+                                    <div class="container">
+                                        <form action="/website/form/" method="post" enctype="multipart/form-data"
+                                              class="o_mark_required" data-mark="*" data-pre-fill="true"
+                                              data-success-mode="redirect" data-success-page="/contactus-thank-you"
+                                              data-model_name="mail.mail">
+                                            <div class="s_website_form_rows row s_col_no_bgcolor">
+                                                <div data-visibility-condition="" data-visibility-between=""
+                                                     class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required col-lg-6"
+                                                     data-type="char" data-name="Field">
+                                                    <label class="s_website_form_label d-none" style="width: 200px"
+                                                           for="8a0ffr46spt">
+                                                        <span class="s_website_form_label_content">Your Name</span>
+                                                        <span class="s_website_form_mark">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control s_website_form_input"
+                                                           name="Your Name" required="1" placeholder="Votre nom"
+                                                           id="8a0ffr46spt"/>
+                                                </div>
+                                                <div data-visibility-condition="" data-visibility-between=""
+                                                     class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required col-lg-6"
+                                                     data-type="tel" data-name="Field">
+                                                    <label class="s_website_form_label d-none" style="width: 200px"
+                                                           for="ipgo044jita">
+                                                        <span class="s_website_form_label_content">Phone Number</span>
+                                                        <span class="s_website_form_mark">*</span>
+                                                    </label>
+                                                    <input type="tel" class="form-control s_website_form_input"
+                                                           name="Phone Number" placeholder="Votre téléphone"
+                                                           id="ipgo044jita" required=""/>
+                                                </div>
+                                                <div data-visibility-condition="" data-visibility-between=""
+                                                     class="form-group s_website_form_field col-12 s_website_form_model_required col-lg-6"
+                                                     data-type="char" data-name="Field">
+                                                    <label class="s_website_form_label d-none" style="width: 200px"
+                                                           for="2pzkna7yuy1">
+                                                        <span class="s_website_form_label_content">Your Email</span>
+                                                        <span class="s_website_form_mark">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control s_website_form_input"
+                                                           name="email_from" required="true" placeholder="Votre email"
+                                                           id="2pzkna7yuy1"/>
+                                                </div>
+                                                <div data-visibility-condition="" data-visibility-between=""
+                                                     class="form-group s_website_form_field col-12 s_website_form_custom col-lg-6"
+                                                     data-type="char" data-name="Field">
+                                                    <label class="s_website_form_label d-none" style="width: 200px"
+                                                           for="zwuzr7ylmd">
+                                                        <span class="s_website_form_label_content">Your Company</span>
+                                                    </label>
+                                                    <input type="text" class="form-control s_website_form_input"
+                                                           name="Your Company" placeholder="Votre société"
+                                                           id="zwuzr7ylmd"/>
+                                                </div>
+                                                <div data-visibility-condition="" data-visibility-between=""
+                                                     class="form-group s_website_form_field col-12 s_website_form_model_required"
+                                                     data-type="char" data-name="Field">
+                                                    <label class="s_website_form_label d-none" style="width: 200px"
+                                                           for="01dsw6ujtldc">
+                                                        <span class="s_website_form_label_content">Subject</span>
+                                                        <span class="s_website_form_mark">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control s_website_form_input"
+                                                           name="subject" required="true" placeholder="Sujet"
+                                                           id="01dsw6ujtldc"/>
+                                                </div>
+                                                <div data-visibility-condition="" data-visibility-between=""
+                                                     class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required"
+                                                     data-type="text" data-name="Field">
+                                                    <label class="s_website_form_label d-none" style="width: 200px"
+                                                           for="mzwxk7tf56">
+                                                        <span class="s_website_form_label_content">Your Question</span>
+                                                        <span class="s_website_form_mark">*</span>
+                                                    </label>
+                                                    <textarea class="form-control s_website_form_input"
+                                                              name="Your Question" required="1"
+                                                              placeholder="Votre message" id="mzwxk7tf56" rows="3"/>
+                                                </div>
+                                                <div class="form-group s_website_form_field col-12    s_website_form_dnone"
+                                                     data-name="Field">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                        <label class="col-form-label col-sm-auto s_website_form_label "
+                                                               style="width: 200px">
+                                                            <span class="s_website_form_label_content"/>
+                                                        </label>
+                                                        <div class="col-sm">
+                                                            <input type="hidden"
+                                                                   class="form-control s_website_form_input"
+                                                                   name="email_to"
+                                                                   value="info@yourcompany.example.com"/>
+                                                            <div class="s_website_form_field_description small form-text text-muted">
+                                                                Séparez les adresses email par une virgule.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-12 s_website_form_submit pb0"
+                                                     data-name="Submit Button" data-original-title="" title=""
+                                                     aria-describedby="tooltip385043">
+                                                    <div style="width: 200px;" class="s_website_form_label"/>
+                                                    <a href="#" role="button"
+                                                       class="s_website_form_send o_default_snippet_text btn btn-primary btn-lg"
+                                                       data-original-title="" title="">ENVOYEZ
+                                                    </a>
+                                                    <span id="s_website_form_result"/>
+                                                    <br/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+</odoo>

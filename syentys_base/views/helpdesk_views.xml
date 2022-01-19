@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- helpdesk.ticket Inherited Form -->
+        <record id="helpdesk_ticket_view_form_project" model="ir.ui.view">
+            <field name="name">helpdesk.ticket.form.project</field>
+            <field name="model">helpdesk.ticket</field>
+            <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='email_cc']" position="after">
+                    <field name="project_id"/>
+                    <field name="us_id" domain="[('parent_id', '=', False), ('project_id', '=', project_id)]"/>
+                    <field name="task_id" domain="[('id', 'child_of', us_id), ('id', '!=', us_id)]"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
