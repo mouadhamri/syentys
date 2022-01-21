@@ -46,5 +46,20 @@
                 </xpath>
             </field>
         </record>
+
+        <!-- project.task Inherited Kanban -->
+        <record id="project_task_view_kanban_code" model="ir.ui.view">
+            <field name="name">project.task.kanban.code</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='o_kanban_record_headings']" position="inside">
+                    <span>
+                        <br />
+                        <field name="code"/>
+                    </span>
+                </xpath>
+            </field>
+        </record>
     </data>
 </odoo>
