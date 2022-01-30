@@ -26,7 +26,7 @@
             <field name="inherit_id" ref="project.view_task_form2"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='parent_id']" position="after">
-                    <field name="code" attrs="{'invisible': [('parent_id','!=',False)]}"/>
+                    <field name="code" attrs="{'invisible': [('parent_id','!=',False)]}" readonly="1"/>
                 </xpath>
                 <xpath expr="//field[@name='recurring_task']" position="after">
                     <field name="invoice_id" attrs="{'invisible': [('parent_id','!=',False)]}"/>
