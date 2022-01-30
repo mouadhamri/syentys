@@ -39,7 +39,7 @@ class Project(models.Model):
 class Task(models.Model):
     _inherit = "project.task"
 
-    code = fields.Char()
+    code = fields.Char(readonly=True)
     invoice_id = fields.Many2one('account.move', string='Facture')
     order_line_id = fields.Many2one('sale.order.line', string='Commande')
     guaranteed_date = fields.Date(string='Date de garantie', readonly=True, compute='_compute_guaranteed_date')
