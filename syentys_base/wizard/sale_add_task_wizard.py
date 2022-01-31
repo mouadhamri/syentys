@@ -51,11 +51,14 @@ class SaleAddTaskWizardLine(models.TransientModel):
     _name = 'sale.add.task.wizard.line'
     _description = 'Ligne de wizard add task'
 
-    name = fields.Char(string='Nom', related='task_id.name')
+    name = fields.Char(string='Nom', related='task_id.name',store=True)
     wizard_id = fields.Many2one('sale.add.task.wizard')
     task_id = fields.Many2one('project.task', string='US')
     partner_id = fields.Many2one('res.partner', related='task_id.partner_id', string='Client')
-    date_deadline = fields.Date(string='Date limite', related='task_id.date_deadline')
+    date_deadline = fields.Date(string='Date limite', related='task_id.date_deadline',store=True)
+    code = fields.Char(string='Code', related='task_id.code',store=True)
+    planned_hours = fields.Float(string='#Heures', related='task_id.planned_hours',store=True)
     project_id = fields.Many2one('project.project', related='task_id.project_id', string='Projet')
+    stage_id = fields.Many2one('project.task.type', related='task_id.stage_id', string='Stage',store=True)
     sequence = fields.Integer('Séquence')
     selected = fields.Boolean('Choisi')
