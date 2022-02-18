@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="sale_timesheet.SoldSection"  t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[@name='sold']" position="replace">
+        </xpath>
+    </t>
+
+    <t t-inherit="sale_timesheet.TotalSoldSection" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[@name='total_sold']" position="replace">
+        </xpath>
+    </t>
+
+    <t t-inherit="sale_timesheet.ProfitabilitySection" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[@name='profitability']" position="replace">
+        </xpath>
+    </t>
+
+
+    <t t-inherit="project.ProjectRightPanel" owl="1" t-inherit-mode="extension">
+        <xpath expr="//t[@t-call='project.StatButtonsSection']" position="replace">
+        </xpath>
+    </t>
+
+</templates>

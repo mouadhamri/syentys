@@ -18,5 +18,10 @@
         'views/res_company_views.xml',
         'views/account_move_views.xml',
     ],
+    'assets': {
+        'web.assets_qweb': [
+            'syentys_base/static/src/xml/**/*',
+        ],
+    },
     'license': 'LGPL-3',
 }

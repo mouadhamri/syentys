@@ -35,6 +35,15 @@ class Project(models.Model):
         })
         return action
 
+    def action_open_project(self):
+        return {
+            'view_mode': 'form',
+            'res_model': 'project.project',
+            'res_id': self.id,
+            'type': 'ir.actions.act_window',
+            'context': self._context
+        }
+
 
 class Task(models.Model):
     _inherit = "project.task"
