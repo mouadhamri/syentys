@@ -86,11 +86,13 @@
             <field name="arch" type="xml">
                 <xpath expr="//div[@class='o_kanban_record_headings']" position="inside">
                     <span>
-                        <br />
+                        <br/>
                         <field name="code"/>
                     </span>
                 </xpath>
             </field>
         </record>
+        
+
     </data>
 </odoo>

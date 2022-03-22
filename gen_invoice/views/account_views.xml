@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- project.task.type Inherited Form -->
+        <record id="account_view_move_form_inherited_gen_report" model="ir.ui.view">
+            <field name="name">account.move.gen.inherited</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <header  position="inside">
+                    <button name="gen_report" string="Post" class="oe_highlight" type="object" />
+                </header>
+            </field>
+        </record>
+
+    </data>
+</odoo>

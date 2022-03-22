@@ -8,7 +8,7 @@
     'website': "http://www.syentys.fr",
     'category': 'Services/Project',
     'version': '15.0.1.0.0',
-    'depends': ['base', 'project', 'account', 'sale', 'sale_timesheet', 'helpdesk'],
+    'depends': ['base', 'project', 'account', 'sale', 'sale_timesheet', 'helpdesk','portal','hr_timesheet'],
     'data': [
         'security/ir.model.access.csv',
         'views/project_views.xml',
