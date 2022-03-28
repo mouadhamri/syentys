@@ -62,6 +62,11 @@ class ProjectCustomerPortal(CustomerPortal):
         if date_begin and date_end:
             domain += [('create_date', '>', date_begin), ('create_date', '<=', date_end)]
 
+        if request.session.uid and request.env['res.users'].browse(request.session.uid):
+            res_user = request.env['res.users'].browse(request.session.uid)
+            if res_user.partner_id:
+                domain += [('project_id.partner_id','parent_of',res_user.partner_id.id)]
+
         # search
         if search and search_in:
             domain += self._task_get_search_domain(search_in, search)
@@ -82,22 +87,6 @@ class ProjectCustomerPortal(CustomerPortal):
 
         tasks = request.env['project.task'].sudo().search(domain, order=order, limit=self._items_per_page,
                                                           offset=pager['offset'])
-        if request.session.uid and request.env['res.users'].browse(request.session.uid):
-            res_user = request.env['res.users'].browse(request.session.uid)
-            if res_user.partner_id:
-                user_task = request.env['project.task'].sudo().search([('project_id.partner_id','parent_of',res_user.partner_id.id)])
-                tasks = user_task #tasks.filtered(lambda task: task.project_id.partner_id == res_user.partner_id)
-                # task count
-                task_count = len(tasks)
-                # pager
-                pager = portal_pager(
-                    url="/my/tasks",
-                    url_args={'date_begin': date_begin, 'date_end': date_end, 'sortby': sortby, 'filterby': filterby,
-                              'groupby': groupby, 'search_in': search_in, 'search': search},
-                    total=task_count,
-                    page=page,
-                    step=self._items_per_page
-                )
 
         request.session['my_tasks_history'] = tasks.ids[:100]
 
