@@ -5,8 +5,8 @@ from odoo import models, fields
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-    def _create_invoices(self, grouped=False, final=False, start_date=None, end_date=None):
-        res = super(SaleOrder, self)._create_invoices(grouped, final, start_date, end_date)
+    def _create_invoices(self, grouped=False, final=False, date=None):
+        res = super()._create_invoices(grouped=grouped, final=final, date=date)
 
         for invoice_id in res:
             order_id = self.env['sale.order'].search([('invoice_ids', 'in', invoice_id.ids)], limit=1)
