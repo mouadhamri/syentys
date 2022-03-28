@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_lead_view_form_inherit_import" model="ir.ui.view">
+        <field name="name">crm.lead.view.form.inherit.import</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="task_name"/>
+            </xpath>
+            <xpath expr="//page[@name='lead']//field[@name='website']" position="before">
+                <field name="region"/>
+                <field name="department"/>
+            </xpath>
+            <xpath expr="//page[@name='lead']//field[@name='referred']" position="after">
+                <field name="siret"/>
+                <field name="naf"/>
+                <field name="tranche_effectif"/>
+                <field name="code_ape"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
