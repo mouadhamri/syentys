@@ -85,7 +85,8 @@ class ProjectCustomerPortal(CustomerPortal):
         if request.session.uid and request.env['res.users'].browse(request.session.uid):
             res_user = request.env['res.users'].browse(request.session.uid)
             if res_user.partner_id:
-                tasks = tasks.filtered(lambda task: task.project_id.partner_id == res_user.partner_id)
+                user_task = request.env['project.task'].search[('project_id.partner_id','parent_of',res_user.partner_id)]
+                tasks = user_task #tasks.filtered(lambda task: task.project_id.partner_id == res_user.partner_id)
 
         request.session['my_tasks_history'] = tasks.ids[:100]
 
