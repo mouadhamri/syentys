@@ -1,0 +1,110 @@
+<odoo>
+
+
+    <template id="project.portal_my_home" name="Show Projects / Tasks" customize_show="True"
+              inherit_id="portal.portal_my_home" priority="40">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">US</t>
+                <t t-set="url" t-value="'/my/tasks'"/>
+                <t t-set="placeholder_count" t-value="'task_count'"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="sale.portal_my_home_sale" name="Show Quotations / Sales Orders" customize_show="True"
+              inherit_id="portal.portal_my_home" priority="20">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Sales Orders</t>
+                <t t-set="url" t-value="'/my/orders'"/>
+                <t t-set="placeholder_count" t-value="'order_count'"/>
+            </t>
+        </xpath>
+    </template>
+    <template id="hr_timesheet.portal_my_home_timesheet" inherit_id="portal.portal_my_home"/>
+    <template id="purchase.portal_my_home_purchase" inherit_id="portal.portal_my_home"/>
+    <template id="appointment.portal_my_home_appointment" inherit_id="portal.portal_my_home"/>
+    <template id="portal_my_task_hide_progress" inherit_id="hr_timesheet.portal_my_task">
+        <xpath expr="//div[@t-if='task.planned_hours > 0']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//div[@t-if='timesheets']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+    </template>
+    <template id="tickets_followup_hide_assigned" inherit_id="helpdesk.tickets_followup">
+        <xpath expr="//div[@t-if='ticket.user_id']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+    </template>
+    <template id="portal_my_task_hide_invoice" inherit_id="sale_timesheet.portal_my_task_inherit">
+        <xpath expr="//div[@t-if='task.sale_line_id.untaxed_amount_to_invoice > 0']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//div[@t-if='task.sale_order_id']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//div[@t-if='task.sale_order_id.invoice_ids']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//div[@t-if='task.sale_line_id.untaxed_amount_invoiced > 0']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//div[@t-if='task.sale_line_id.untaxed_amount_to_invoice > 0']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+    </template>
+    <template id="portal_my_task_hide_assigne" inherit_id="project.portal_my_task">
+        <xpath expr="//div[@t-if='task.user_ids or task.partner_id']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//div[@name='portal_my_task_planned_hours']" position="before">
+            <div t-if="task.planned_hours > 0">
+                <strong>Code US :</strong>
+                <span t-field="task.code"/>
+            </div>
+        </xpath>
+    </template>
+    <template id="portal_tasks_list_hide_fields" inherit_id="project.portal_tasks_list">
+        <xpath expr="//thead//th[hasclass('text-left')]" position="replace">
+            <th class="text-left">Code US</th>
+        </xpath>
+        <xpath expr="//th[@name='project_portal_assignees']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+        <xpath expr="//tbody//td[hasclass('text-left')]" position="replace">
+            <td class="text-left">
+                #
+                <span t-esc="task.code"/>
+            </td>
+        </xpath>
+        <xpath expr="//td[@name='project_portal_assignees']" position="attributes">
+            <attribute name="t-att-style">'display: none;'</attribute>
+        </xpath>
+    </template>
+
+    <template id="hr_timesheet.portal_tasks_list_inherit" inherit_id="project.portal_tasks_list"
+              name="Portal: My Tasks with Timesheets">
+        <xpath expr="//t[@t-call='portal.portal_table']" position="inside">
+            <t t-set="timesheet_ids" t-value="task.sudo().timesheet_ids"/>
+            <t t-set="is_uom_day" t-value="timesheet_ids._is_timesheet_encode_uom_day()"/>
+        </xpath>
+        <xpath expr="//thead/tr/th[@name='project_portal_assignees']" position="after">
+            <th t-if="is_uom_day">Jours prévus</th>
+            <th t-else="">Heures prévues</th>
+        </xpath>
+        <xpath expr="//tbody/t/tr/td[@name='project_portal_assignees']" position="after">
+            <td>
+                <t t-if="is_uom_day">
+                    <t t-out="timesheet_ids._convert_hours_to_days(task.planned_hours)"/>
+                    <span>jour(s)</span>
+                </t>
+                <t t-else="">
+                    <span t-field="task.planned_hours" t-options='{"widget": "float_time"}'/>
+                    <span>heure(s)</span>
+                </t>
+            </td>
+        </xpath>
+    </template>
+</odoo>
