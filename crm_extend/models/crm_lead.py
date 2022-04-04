@@ -11,4 +11,3 @@ class Lead(models.Model):
     naf = fields.Char(string="Naf")
     tranche_effectif = fields.Char(string="Tranche de l'effectif")
     code_ape = fields.Char(string="Code APE")
-    task_name = fields.Char(string="Étiquettes/Nom")
