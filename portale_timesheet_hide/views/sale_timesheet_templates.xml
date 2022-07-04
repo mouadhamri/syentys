@@ -1,0 +1,6 @@
+<odoo>
+    <!-- Inherit sale order portal content template -->
+    <template id="sale_order_portal_content_inherit" inherit_id="sale_timesheet.sale_order_portal_content_inherit">
+        <xpath expr="//div[hasclass('justify-content-center')]" position="replace"/>
+    </template>
+</odoo>
